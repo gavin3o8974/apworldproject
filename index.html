@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHIMERA // COMPUTER VIRUSES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+  <!-- Matrix rain canvas -->
+  <canvas id="matrix"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">⚠ VIRUSES</div>
+    <ul>
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="era1.html">1970s–80s</a></li>
+      <li><a href="era2.html">1990s</a></li>
+      <li><a href="era3.html">2000s</a></li>
+      <li><a href="era4.html">2010s+</a></li>
+      <li><a href="virus.html">TRANSMISSION</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="glitch-wrapper">
+      <h1 class="glitch" data-text="VIRUS CHRONICLES">COMPUTER VIRUSES</h1>
+    </div>
+    <p class="subtitle">The history of digital infection — from primitive code to global warfare.</p>
+    <div class="cta-row">
+      <a href="era1.html" class="btn-danger">BEGIN TRANSMISSION</a>
+    </div>
+    <div class="skull">☠</div>
+  </section>
+
+  <!-- TIMELINE PREVIEW -->
+  <section class="timeline-section">
+    <h2 class="section-title">INFECTION TIMELINE</h2>
+    <div class="timeline">
+      <div class="tl-item" onclick="location.href='era1.html'">
+        <div class="tl-year">1971</div>
+        <div class="tl-name">The Creeper</div>
+        <div class="tl-desc">The world's first self-replicating program.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era1.html'">
+        <div class="tl-year">1986</div>
+        <div class="tl-name">Brain</div>
+        <div class="tl-desc">First PC virus. Pakistani brothers. Global chaos.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era2.html'">
+        <div class="tl-year">1999</div>
+        <div class="tl-name">Melissa</div>
+        <div class="tl-desc">Email worm that crippled the internet.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era3.html'">
+        <div class="tl-year">2000</div>
+        <div class="tl-name">ILOVEYOU</div>
+        <div class="tl-desc">$10 billion in damage. Billions infected.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era3.html'">
+        <div class="tl-year">2003</div>
+        <div class="tl-name">SQL Slammer</div>
+        <div class="tl-desc">Spread worldwide in 10 minutes.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era4.html'">
+        <div class="tl-year">2010</div>
+        <div class="tl-name">Stuxnet</div>
+        <div class="tl-desc">First cyberweapon. Nation-state attack.</div>
+      </div>
+      <div class="tl-item" onclick="location.href='era4.html'">
+        <div class="tl-year">2017</div>
+        <div class="tl-name">WannaCry</div>
+        <div class="tl-desc">Ransomware. 150 countries. $4 billion damage.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stat-card">
+      <div class="stat-num" data-target="1000000000">0</div>
+      <div class="stat-label">Devices infected annually</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-target="6000">0</div>
+      <div class="stat-label">New viruses per day</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" data-target="55">0</div>
+      <div class="stat-label">Years of digital warfare</div>
+    </div>
+  </section>
+
+  <!-- GLOBAL INFECTION COUNTER -->
+  <section class="global-counter-section">
+    <div class="gc-header">
+      <span class="gc-blink">⬤</span> GLOBAL MALWARE INFECTIONS THIS YEAR
+    </div>
+    <div class="gc-num" id="globalCounter">0</div>
+    <div class="gc-track">
+      <div class="gc-track-fill" id="gcFill"></div>
+    </div>
+    <div class="gc-sub">Approximately 1 billion devices infected annually — <strong>~32 new infections every second</strong></div>
+    <div class="gc-footnote">Counter begins from estimated infections up to today's date. For educational purposes.</div>
+  </section>
+
+  <footer>
+    <p>☠ VIRUS.CHRONICLES — FOR EDUCATIONAL PURPOSES ONLY ☠</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
